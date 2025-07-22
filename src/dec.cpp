@@ -180,8 +180,13 @@ double DEC::sobolevInner(const Cochain& u,
   return inner(u, v) + inner(du, dv);
 }
 
-double DEC::sobolevNorm(const Cochain& u) const {
+
+double DEC::sobolevSemiNorm(const Cochain& u) const {
   Cochain du(u.n0, u.n1, u.n2);
   diff(u, du);
-  return std::sqrt(inner(u, u) + inner(du, du));
+  return norm(du);
+}
+
+double DEC::sobolevNorm(const Cochain& u) const {
+  return norm(u) + sobolevSemiNorm(u);
 } 

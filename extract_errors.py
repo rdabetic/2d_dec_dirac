@@ -36,23 +36,22 @@ def extract_errors(filename):
 if __name__ == "__main__":
     if len(sys.argv) < 2:
         print("Usage: python script_name.py <load_fname (without .txt)> \
-              <optional: maximum reference order>")
+              <optional: reference order>")
         sys.exit(1)
 
-    print_orders = 1
     load_fname = sys.argv[1]
+    order = 1
     if len(sys.argv) >= 3:
-        print_orders = int(sys.argv[2])
+        order = int(sys.argv[2])
     
     l2_errors, sobolev_errors, mesh_widths = \
         extract_errors(load_fname + ".txt")
 
     plt.loglog(mesh_widths, l2_errors, label = r"DEC $L^2$", marker = '+')
     plt.loglog(mesh_widths, sobolev_errors, label = r"DEC $H\Lambda$", marker = '+')
-    for order in range(1, print_orders + 1):
-        plt.loglog(mesh_widths, mesh_widths ** order, 
-                   label = r"$\mathcal{O}$" + f"$(h^{{{order}}})$",
-                   ls = ":")
+    plt.loglog(mesh_widths, mesh_widths ** order, 
+               label = r"$\mathcal{O}$" + f"$(h^{{{order}}})$",
+               ls = ":")
     plt.xlabel("Mesh-Width")
     plt.ylabel("Error")
     plt.legend(loc = 'upper left')

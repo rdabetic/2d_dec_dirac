@@ -3,3 +3,4 @@ This is a small library to solve BVPs with homogenous Dirichlet boundary conditi
 Required external dependencies:
 - Eigen (3.4)
 - MFEM (4.8)
+- Spectra (for computing the multigrid convergence rates)

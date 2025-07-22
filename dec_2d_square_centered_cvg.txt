@@ -1,0 +1,67 @@
+
+Gmsh reader: all element attributes were zero.
+MFEM only supports positive element attributes.
+Setting element attributes to 1.
+
+Refinement level 0
+	Mesh-width: 3.975054e-01
+	No. triangles: 28
+	Solver residual norm: 5.526977e-15
+	Error in DEC L2 norm: 5.279858e-01
+	Error in DEC Sobolev norm: 1.311590e+00
+Refinement level 1
+	Mesh-width: 1.987527e-01
+	No. triangles: 112
+	Solver residual norm: 9.688363e-05
+	Error in DEC L2 norm: 6.822686e-02
+	Error in DEC Sobolev norm: 4.872229e-01
+	EOC: 1.428663e+00
+Refinement level 2
+	Mesh-width: 9.937634e-02
+	No. triangles: 448
+	Solver residual norm: 4.020698e-04
+	Error in DEC L2 norm: 3.121094e-02
+	Error in DEC Sobolev norm: 2.252117e-01
+	EOC: 1.113300e+00
+Refinement level 3
+	Mesh-width: 4.968817e-02
+	No. triangles: 1792
+	Solver residual norm: 6.784334e-04
+	Error in DEC L2 norm: 1.521126e-02
+	Error in DEC Sobolev norm: 1.100820e-01
+	EOC: 1.032703e+00
+Refinement level 4
+	Mesh-width: 2.484408e-02
+	No. triangles: 7168
+	Solver residual norm: 1.372425e-03
+	Error in DEC L2 norm: 7.554565e-03
+	Error in DEC Sobolev norm: 5.472002e-02
+	EOC: 1.008438e+00
+Refinement level 5
+	Mesh-width: 1.242204e-02
+	No. triangles: 28672
+	Solver residual norm: 1.557861e-03
+	Error in DEC L2 norm: 3.770754e-03
+	Error in DEC Sobolev norm: 2.731974e-02
+	EOC: 1.002125e+00
+Refinement level 6
+	Mesh-width: 6.211021e-03
+	No. triangles: 114688
+	Solver residual norm: 1.426132e-03
+	Error in DEC L2 norm: 1.884545e-03
+	Error in DEC Sobolev norm: 1.365465e-02
+	EOC: 1.000551e+00
+Refinement level 7
+	Mesh-width: 3.105511e-03
+	No. triangles: 458752
+	Solver residual norm: 1.184179e-03
+	Error in DEC L2 norm: 9.421666e-04
+	Error in DEC Sobolev norm: 6.826667e-03
+	EOC: 1.000139e+00
+Refinement level 8
+	Mesh-width: 1.552755e-03
+	No. triangles: 1835008
+	Solver residual norm: 9.365079e-04
+	Error in DEC L2 norm: 4.710699e-04
+	Error in DEC Sobolev norm: 3.413404e-03
+	EOC: 9.999703e-01

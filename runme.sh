@@ -12,8 +12,8 @@ cd targets
 #./test_tria_cvg ../../meshes/tria.msh 9 > ../../dec_2d_tria_cvg.txt
 
 ./test_square_cvg ../../meshes/square_centered.msh 8 > ../../dec_2d_square_centered_cvg.txt
-./test_tria_cvg ../../meshes/tria.msh 9 > ../../dec_2d_tria_cvg.txt
-./test_tria_cvg_pert ../../meshes/tria.msh 9 > ../../dec_2d_tria_cvg_pert.txt
+./test_tria_cvg ../../meshes/tria.msh 10 > ../../dec_2d_tria_cvg.txt
+./test_tria_cvg_pert ../../meshes/tria.msh 10 > ../../dec_2d_tria_cvg_pert.txt
 
 #./test_L_cvg ../../meshes/L_centered.msh 8 > ../../dec_2d_L_centered_cvg_circ.txt
 
@@ -56,5 +56,5 @@ rm -rf build
 
 ## Plot
 python extract_errors.py dec_2d_square_centered_cvg 1
-python extract_errors.py dec_2d_tria_cvg 3
+python extract_errors.py dec_2d_tria_cvg 2
 python extract_errors.py dec_2d_tria_cvg_pert 1

@@ -1,6 +1,4 @@
 #include "bary.hpp"
-#define EXP (3)
-#define MEAN (2048. / 5775.)
 
 double l0(const Eigen::Vector2d& v) {
   return 1 - v(0) - v(1) / std::sqrt(3);
@@ -38,8 +36,7 @@ Eigen::Vector2d gradL2(const Eigen::Vector2d v) {
 
 
 double u0(const Eigen::Vector2d& v) {
-  return std::pow(l0(v) * l1(v) * l2(v), EXP) * 
-         std::pow(32, EXP);
+  return l0(v) * l1(v) * l2(v);
 }
 
 Eigen::Vector2d u1(const Eigen::Vector2d& v) {
@@ -50,17 +47,15 @@ Eigen::Vector2d u1(const Eigen::Vector2d& v) {
 }
 
 double u2(const Eigen::Vector2d& v) {
-  // Subtract the mean
-  return u0(v) - MEAN;
+  // Subtract the mean, which is 1 / 60
+  return u0(v) - 1. / 60.;
 }
 
 
 Eigen::Vector2d gradU0(const Eigen::Vector2d& v) {
-  return (l0(v) * l1(v) * gradL2(v) + 
-          l0(v) * l2(v) * gradL1(v) + 
-          l1(v) * l2(v) * gradL0(v)) * 
-    std::pow(l0(v) * l1(v) * l2(v), EXP - 1) * EXP *
-    std::pow(32, EXP);
+  return l0(v) * l1(v) * gradL2(v) + 
+         l0(v) * l2(v) * gradL1(v) + 
+         l1(v) * l2(v) * gradL0(v);
 }
 
 Eigen::Vector2d curlU2(const Eigen::Vector2d& v) {

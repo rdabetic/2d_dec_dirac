@@ -64,7 +64,7 @@ int main(int argc, char* argv[]) {
     // Solve
     //D.buildCoarseSolver();
     //u = D.directSolve(load);
-    Cochain u = MG.FMG(load, 1e-3 * std::pow(h, 3), 100'000);
+    Cochain u = MG.FMG(load, 1e-2 * std::pow(h, 2), 100'000);
     std::cout << "\tSolver residual norm: " 
               << D.residual(u, load).norm() << std::endl;
     err -= u;

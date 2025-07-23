@@ -47,7 +47,8 @@ Eigen::Vector2d u1(const Eigen::Vector2d& v) {
 }
 
 double u2(const Eigen::Vector2d& v) {
-  return u0(v);
+  // Subtract the mean, which is 1 / 60
+  return u0(v) - 1. / 60.;
 }
 
 

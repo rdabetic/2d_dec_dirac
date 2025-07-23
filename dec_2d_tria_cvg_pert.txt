@@ -1,0 +1,74 @@
+
+Gmsh reader: all element attributes were zero.
+MFEM only supports positive element attributes.
+Setting element attributes to 1.
+
+Refinement level 0
+	Mesh-width: 2.737928e-01
+	No. triangles: 16
+	Solver residual norm: 1.036517e-16
+	Error in DEC L2 norm: 8.024107e-03
+	Error in DEC Sobolev norm: 8.270096e-03
+Refinement level 1
+	Mesh-width: 1.368964e-01
+	No. triangles: 64
+	Solver residual norm: 7.411637e-09
+	Error in DEC L2 norm: 4.024562e-04
+	Error in DEC Sobolev norm: 5.354313e-04
+	EOC: 3.949131e+00
+Refinement level 2
+	Mesh-width: 6.844821e-02
+	No. triangles: 256
+	Solver residual norm: 9.136349e-10
+	Error in DEC L2 norm: 1.545972e-04
+	Error in DEC Sobolev norm: 1.957622e-04
+	EOC: 1.451599e+00
+Refinement level 3
+	Mesh-width: 3.422410e-02
+	No. triangles: 1024
+	Solver residual norm: 1.544373e-09
+	Error in DEC L2 norm: 7.057422e-05
+	Error in DEC Sobolev norm: 8.220075e-05
+	EOC: 1.251879e+00
+Refinement level 4
+	Mesh-width: 1.711205e-02
+	No. triangles: 4096
+	Solver residual norm: 2.418839e-10
+	Error in DEC L2 norm: 3.440274e-05
+	Error in DEC Sobolev norm: 3.758307e-05
+	EOC: 1.129069e+00
+Refinement level 5
+	Mesh-width: 8.556026e-03
+	No. triangles: 16384
+	Solver residual norm: 3.605772e-11
+	Error in DEC L2 norm: 1.708902e-05
+	Error in DEC Sobolev norm: 1.794518e-05
+	EOC: 1.066486e+00
+Refinement level 6
+	Mesh-width: 4.278013e-03
+	No. triangles: 65536
+	Solver residual norm: 6.682405e-12
+	Error in DEC L2 norm: 8.530379e-06
+	Error in DEC Sobolev norm: 8.758530e-06
+	EOC: 1.034836e+00
+Refinement level 7
+	Mesh-width: 2.139007e-03
+	No. triangles: 262144
+	Solver residual norm: 8.613119e-12
+	Error in DEC L2 norm: 4.263416e-06
+	Error in DEC Sobolev norm: 4.323766e-06
+	EOC: 1.018400e+00
+Refinement level 8
+	Mesh-width: 1.069503e-03
+	No. triangles: 1048576
+	Solver residual norm: 2.535291e-12
+	Error in DEC L2 norm: 2.131486e-06
+	Error in DEC Sobolev norm: 2.147357e-06
+	EOC: 1.009726e+00
+Refinement level 9
+	Mesh-width: 5.347516e-04
+	No. triangles: 4194304
+	Solver residual norm: 8.306861e-12
+	Error in DEC L2 norm: 1.065715e-06
+	Error in DEC Sobolev norm: 1.069870e-06
+	EOC: 1.005127e+00

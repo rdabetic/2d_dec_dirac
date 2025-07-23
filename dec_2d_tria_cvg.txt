@@ -6,69 +6,69 @@ Setting element attributes to 1.
 Refinement level 0
 	Mesh-width: 2.500000e-01
 	No. triangles: 16
-	Solver residual norm: 1.073322e-16
+	Solver residual norm: 1.214205e-16
 	Error in DEC L2 norm: 7.438935e-03
 	Error in DEC Sobolev norm: 7.438935e-03
 Refinement level 1
 	Mesh-width: 1.250000e-01
 	No. triangles: 64
-	Solver residual norm: 3.483229e-09
-	Error in DEC L2 norm: 5.667324e-05
-	Error in DEC Sobolev norm: 5.667455e-05
-	EOC: 7.036251e+00
+	Solver residual norm: 1.246048e-09
+	Error in DEC L2 norm: 5.667326e-05
+	Error in DEC Sobolev norm: 5.667388e-05
+	EOC: 7.036268e+00
 Refinement level 2
 	Mesh-width: 6.250000e-02
 	No. triangles: 256
-	Solver residual norm: 6.045193e-09
-	Error in DEC L2 norm: 7.126191e-06
-	Error in DEC Sobolev norm: 7.128421e-06
-	EOC: 2.991047e+00
+	Solver residual norm: 4.214312e-09
+	Error in DEC L2 norm: 7.126202e-06
+	Error in DEC Sobolev norm: 7.128114e-06
+	EOC: 2.991092e+00
 Refinement level 3
 	Mesh-width: 3.125000e-02
 	No. triangles: 1024
-	Solver residual norm: 2.873029e-10
+	Solver residual norm: 2.874660e-10
 	Error in DEC L2 norm: 8.920839e-07
-	Error in DEC Sobolev norm: 8.922281e-07
-	EOC: 2.998098e+00
+	Error in DEC Sobolev norm: 8.922258e-07
+	EOC: 2.998040e+00
 Refinement level 4
 	Mesh-width: 1.562500e-02
 	No. triangles: 4096
-	Solver residual norm: 1.823545e-11
+	Solver residual norm: 1.702447e-11
 	Error in DEC L2 norm: 1.115514e-07
-	Error in DEC Sobolev norm: 1.115622e-07
-	EOC: 2.999565e+00
+	Error in DEC Sobolev norm: 1.115609e-07
+	EOC: 2.999577e+00
 Refinement level 5
 	Mesh-width: 7.812500e-03
 	No. triangles: 16384
-	Solver residual norm: 1.801183e-11
-	Error in DEC L2 norm: 1.394522e-08
-	Error in DEC Sobolev norm: 1.395709e-08
-	EOC: 2.998778e+00
+	Solver residual norm: 1.644550e-11
+	Error in DEC L2 norm: 1.394520e-08
+	Error in DEC Sobolev norm: 1.395618e-08
+	EOC: 2.998856e+00
 Refinement level 6
 	Mesh-width: 3.906250e-03
 	No. triangles: 65536
-	Solver residual norm: 1.238808e-12
-	Error in DEC L2 norm: 1.743271e-09
-	Error in DEC Sobolev norm: 1.753843e-09
-	EOC: 2.992406e+00
+	Solver residual norm: 1.151517e-12
+	Error in DEC L2 norm: 1.743190e-09
+	Error in DEC Sobolev norm: 1.753769e-09
+	EOC: 2.992373e+00
 Refinement level 7
 	Mesh-width: 1.953125e-03
 	No. triangles: 262144
-	Solver residual norm: 1.403333e-12
-	Error in DEC L2 norm: 2.185004e-10
-	Error in DEC Sobolev norm: 2.334402e-10
-	EOC: 2.909395e+00
+	Solver residual norm: 1.329378e-12
+	Error in DEC L2 norm: 2.179002e-10
+	Error in DEC Sobolev norm: 2.328419e-10
+	EOC: 2.913036e+00
 Refinement level 8
 	Mesh-width: 9.765625e-04
 	No. triangles: 1048576
-	Solver residual norm: 2.179398e-12
-	Error in DEC L2 norm: 3.166908e-11
-	Error in DEC Sobolev norm: 5.293948e-11
-	EOC: 2.140637e+00
+	Solver residual norm: 2.140895e-12
+	Error in DEC L2 norm: 2.724136e-11
+	Error in DEC Sobolev norm: 4.845914e-11
+	EOC: 2.264510e+00
 Refinement level 9
 	Mesh-width: 4.882813e-04
 	No. triangles: 4194304
-	Solver residual norm: 8.651238e-12
-	Error in DEC L2 norm: 1.658079e-11
-	Error in DEC Sobolev norm: 4.789152e-11
-	EOC: 1.445738e-01
+	Solver residual norm: 8.495072e-12
+	Error in DEC L2 norm: 3.702790e-12
+	Error in DEC Sobolev norm: 3.514553e-11
+	EOC: 4.634275e-01

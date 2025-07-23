@@ -49,7 +49,9 @@ if __name__ == "__main__":
 
     plt.loglog(mesh_widths, l2_errors, label = r"DEC $L^2$", marker = '+')
     plt.loglog(mesh_widths, sobolev_errors, label = r"DEC $H\Lambda$", marker = '+')
-    plt.loglog(mesh_widths, mesh_widths ** order, 
+    plt.loglog(mesh_widths, 
+               (mesh_widths * sobolev_errors[0] **  (1 / order) /
+                mesh_widths[0]) ** order, 
                label = r"$\mathcal{O}$" + f"$(h^{{{order}}})$",
                ls = ":")
     plt.xlabel("Mesh-Width")

@@ -132,12 +132,17 @@ struct DEC {
       auto triaArea = [&] (const Eigen::Vector2d& A, 
                            const Eigen::Vector2d& B,
                            const Eigen::Vector2d& C) -> double {
-        const auto AB = B - A,
-                   AC = C - A;
-        return 
-          std::abs(
-            AB(0) * AC(1) - AB(1) * AC(0)
-          ) / 2.;
+        const double a = (B - A).norm(),
+                     b = (C - B).norm(),
+                     c = (A - C).norm(),
+                     s = (a + b + c) / 2.;
+        return std::sqrt(s * (s - a) * (s - b) * (s - c));
+        //const auto AB = B - A,
+        //           AC = C - A;
+        //return 
+        //  std::abs(
+        //    AB(0) * AC(1) - AB(1) * AC(0)
+        //  ) / 2.;
       };
       auto tria_quad = 
         [&]<typename F> (F f, const Eigen::Vector2d& A, 

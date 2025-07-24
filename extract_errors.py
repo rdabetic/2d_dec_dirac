@@ -1,5 +1,6 @@
 import re
 import matplotlib.pyplot as plt
+plt.rcParams.update({'font.size': 16})
 import sys
 import numpy as np
 
@@ -55,7 +56,7 @@ if __name__ == "__main__":
                label = r"$\mathcal{O}$" + f"$(h^{{{order}}})$",
                ls = ":")
     plt.xlabel("Mesh-Width")
-    plt.ylabel("Error")
+    plt.ylabel("Error norms")
     plt.legend(loc = 'upper left')
     plt.tight_layout()
     plt.savefig(load_fname + ".pdf", dpi = 300)

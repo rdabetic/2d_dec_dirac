@@ -23,28 +23,28 @@ int main(int argc, char* argv[]) {
 
   // Mesh
   mfem::Mesh mesh__(fname);
-  Mesh2D mesh_(std::move(mesh__));
   /* Perturb mesh */
   const double pert_size = 0.025;
   Eigen::VectorXd perturbation_ = 
-    Eigen::VectorXd::Random(2 * mesh_.GetNV()) * pert_size;
-  mfem::Vector perturbation(&perturbation_[0], 2 * mesh_.GetNV());
+    Eigen::VectorXd::Random(2 * mesh__.GetNV()) * pert_size;
+  mfem::Vector perturbation(&perturbation_[0], 2 * mesh__.GetNV());
   // Zero out the perturbations on the boundary (we want the same shape)
-  auto [bd_v, n_bd_v] = extractBDPts(mesh_);
+  auto [bd_v, n_bd_v] = extractBDPts(mesh__);
   for(unsigned int k = 0; k < bd_v.size(); ++k) {
     if(bd_v[k]) {
       perturbation(k) = 0; 
-      perturbation(k + mesh_.GetNV()) = 0; 
+      perturbation(k + mesh__.GetNV()) = 0; 
     }
   }
   // Move the points
-  mesh_.MoveVertices(perturbation);
+  mesh__.MoveVertices(perturbation);
   // Print the perturbed mesh
   std::ofstream file;
   file.open("perturbed_tria.vtk");
-  mesh_.PrintVTK(file);
+  mesh__.PrintVTK(file);
   file.close();
   /* Convergence analysis */
+  Mesh2D mesh_(std::move(mesh__));
   DiracMG MG(mesh_, 3);
   // Find errors
   double errn_old, h_old;

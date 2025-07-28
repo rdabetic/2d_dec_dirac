@@ -6,16 +6,16 @@ Setting element attributes to 1.
 Refinement level 0
 	Mesh-width: 2.737928e-01
 	No. triangles: 16
-	Solver residual norm: 8.038212e-15
-	Error in DEC L2 norm: 3.936588e-01
-	Error in DEC Sobolev norm: 5.976660e-01
+	Solver residual norm: 4.546384e-15
+	Error in DEC L2 norm: 3.926241e-01
+	Error in DEC Sobolev norm: 5.966286e-01
 Refinement level 1
 	Mesh-width: 1.368964e-01
 	No. triangles: 64
 	Solver residual norm: 7.171534e-06
 	Error in DEC L2 norm: 5.724334e-02
 	Error in DEC Sobolev norm: 1.137909e-01
-	EOC: 2.392954e+00
+	EOC: 2.390448e+00
 Refinement level 2
 	Mesh-width: 6.844821e-02
 	No. triangles: 256
@@ -75,7 +75,7 @@ Refinement level 9
 Refinement level 10
 	Mesh-width: 2.673758e-04
 	No. triangles: 16777216
-	Solver residual norm: 6.054728e-08
+	Solver residual norm: 6.054725e-08
 	Error in DEC L2 norm: 2.130782e-05
 	Error in DEC Sobolev norm: 2.155556e-05
 	EOC: 1.016913e+00

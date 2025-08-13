@@ -7,7 +7,7 @@
  *  manufacturing a solution.
  */
 
-#include <Eigen/Eigen>
+#include <eigen3/Eigen/Eigen>
 
 // Barucentric coodrinate functions
 double l0(const Eigen::Vector2d& v);

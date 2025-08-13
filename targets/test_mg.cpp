@@ -42,9 +42,9 @@ int main(int argc, char* argv[]) {
   for(unsigned int lvl = 1; lvl < nref + 1; ++lvl) {
     MG.addMGLevel();
 
-    //Eigen::VectorXcd ew = getEW(MG, nev, 1e-2);
+    Eigen::VectorXcd ew = getEW(MG, nev, 1e-2);
     //Eigen::VectorXcd ew = deflatedArnoldiMG(MG, nev);
-    Eigen::VectorXd ew = deflatedPowerIt(MG, nev);
+    //Eigen::VectorXd ew = deflatedPowerIt(MG, nev);
 
     std::cout << "Refinement level " << lvl << std::endl
               << "\tMesh-width: " 
